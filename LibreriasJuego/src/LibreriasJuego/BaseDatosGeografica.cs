@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LibreriasJuego
 {
-    interface BaseDatosGeografica
+    public interface BaseDatosGeografica
     {
         public List<Continente> getContinentes();
         public Continente getContiente(string nombreContinente);
