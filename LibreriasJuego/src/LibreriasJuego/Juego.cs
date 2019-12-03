@@ -22,8 +22,8 @@ namespace LibreriasJuego
             return elJuego;
         }
 
-        public BaseDatosJugadores baseDatosJugadores { get; }
-        public BaseDatosGeografica baseDatosGeografica { get; }
+        public IBaseDatosJugadores baseDatosJugadores { get; }
+        public IBaseDatosGeografica baseDatosGeografica { get; }
 
 
     }

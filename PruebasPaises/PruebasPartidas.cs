@@ -9,8 +9,8 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestRecuperarListaPartidas1()
         {
-            BaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            Jugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IJugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
             Assert.IsNotNull(cris.historicoPartidas);  // me devuelve una lista de partidas aunque esté vacía
 
         }
@@ -19,10 +19,10 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestNuevaPartida()
         {
-            BaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            Jugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
-            Continente europa = Juego.dameElJuego().baseDatosGeografica.getContiente("Europa");
-            Partida partida = cris.nuevaPartida(europa);
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IJugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
+            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContiente("Europa");
+            IPartida partida = cris.nuevaPartida(europa);
             Assert.IsNotNull(partida);  
 
         }
@@ -32,13 +32,13 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestNuevaPartida2()
         {
-            BaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            Jugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IJugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
 
             int cuantasllevaba = cris.historicoPartidas.Count;
 
-            Continente europa = Juego.dameElJuego().baseDatosGeografica.getContiente("Europa");
-            Partida partida = cris.nuevaPartida(europa);
+            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContiente("Europa");
+            IPartida partida = cris.nuevaPartida(europa);
 
             int cuantaslleva = cris.historicoPartidas.Count;
 

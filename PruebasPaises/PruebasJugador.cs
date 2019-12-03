@@ -9,8 +9,8 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestJugador_Nombre()
         {
-            BaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            Jugador cris = miBaseDatosJugadores.getJugador("Cris");
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IJugador cris = miBaseDatosJugadores.getJugador("Cris");
             Assert.AreEqual(cris.nombre, "Cris");
         }
 
@@ -18,8 +18,8 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestJugadores_Alta()
         {
-            BaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            Jugador cris = miBaseDatosJugadores.nuevoJugador("Cris");
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IJugador cris = miBaseDatosJugadores.nuevoJugador("Cris");
             Assert.IsNotNull(cris);
 
         }
@@ -28,8 +28,8 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestJugador_Recupera()
         {
-            BaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            Jugador cris = miBaseDatosJugadores.getJugador("Cris");
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IJugador cris = miBaseDatosJugadores.getJugador("Cris");
             Assert.IsNotNull(cris);
          
         }
@@ -38,8 +38,8 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestJugadores_AltayRecupera()
         {
-            BaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            Jugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IJugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
             Assert.AreEqual(cris.nombre, "Cris");
 
         }
