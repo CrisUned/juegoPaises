@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibreriasJuego", "LibreriasJuego\LibreriasJuego.csproj", "{585371AC-C33F-4BD5-85A3-ADE1E2E82D9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasPaises", "PruebasPaises\PruebasPaises.csproj", "{1A4F084D-09F7-493B-9C9C-A042116DAF18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasLibrerias", "PruebasPaises\PruebasLibrerias.csproj", "{1A4F084D-09F7-493B-9C9C-A042116DAF18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
