@@ -1,5 +1,7 @@
 ﻿using LibreriasJuego;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+
 namespace PruebasLibreria
 {
     [TestClass]
@@ -22,16 +24,20 @@ namespace PruebasLibreria
             Assert.AreNotEqual(europa.paises.Count,0);
             
         }
-
+        [TestMethod]
         public void TestEuropa_NoPaises()
         {
             IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
             IContinente europa = miBaseDatosGeografica.getContiente("Europa");
 
-            IPais nuevazelanda = europa.getPais("NuevaZelanda");
-            Assert.IsNull(nuevazelanda);
+            // IPais nuevazelanda = europa.getPais("NuevaZelanda");
+            //System.Action funcionAlaQueTienesQueLlamar = recuperarNuevaZelanda;
+            
+            Assert.ThrowsException<KeyNotFoundException>(
+                () =>europa.getPais("NuevaZelanda"));
          
         }
+        
         [TestMethod]
         public void TestEuropa_SiPais()
         {

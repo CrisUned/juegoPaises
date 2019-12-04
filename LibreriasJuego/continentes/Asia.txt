@@ -1,6 +1,5 @@
 ﻿Afganistán: Kabul - Afghani
 Arabia Saudita: Riad - Rial Saudi
-Armenia: Ereván - Dram
 Azerbaiyán: Bakú - Manat azerí
 Bangladés: Dacca - Taka
 Baréin: Manama - Dinar Bahraini
@@ -10,7 +9,6 @@ Bután: Thimbu- Rupia hindú
 Camboya: Phnom-Pehn - Riel
 Catar: Doha - Rial Qatari
 China: Pekín - Yuan Renminbi
-Chipre: Nicosia - Euro
 Corea del Norte: Pyongyang - Won norcoreano
 Corea del Sur: Seúl - Won
 Emiratos Árabes Unidos: Abu Dhabi - Diram UAE

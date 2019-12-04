@@ -5,31 +5,36 @@ namespace PruebasLibreria
     [TestClass]
     public class PruebasJugador
     {
-        // prueba nombre
-        [TestMethod]
-        public void TestJugador_Nombre()
-        {
-            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            IJugador cris = miBaseDatosJugadores.getJugador("Cris");
-            Assert.AreEqual(cris.nombre, "Cris");
-        }
-
         // Prueba Alta
         [TestMethod]
         public void TestJugadores_Alta()
         {
             IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            IJugador cris = miBaseDatosJugadores.nuevoJugador("Cris");
+            IJugador cris = miBaseDatosJugadores.nuevoJugador("Cris3");
             Assert.IsNotNull(cris);
 
         }
+        // prueba nombre
+        [TestMethod]
+        public void TestJugador_Nombre()
+        {
+            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IJugador criso = miBaseDatosJugadores.nuevoJugador("Cris");
+
+            IJugador cris = miBaseDatosJugadores.getJugador("Cris");
+            Assert.AreEqual(cris.nombre, "Cris");
+        }
+
+        
 
         //prueba Recuperar jugador
         [TestMethod]
         public void TestJugador_Recupera()
         {
             IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
-            IJugador cris = miBaseDatosJugadores.getJugador("Cris");
+            IJugador criso = miBaseDatosJugadores.nuevoJugador("Cris2");
+
+            IJugador cris = miBaseDatosJugadores.getJugador("Cris2");
             Assert.IsNotNull(cris);
          
         }

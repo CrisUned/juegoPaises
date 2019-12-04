@@ -19,7 +19,7 @@ namespace LibreriasJuego
             return j;
         }
 
-        public IList<IJugador> getJugadores { get => new List<IJugador>(this.misJugadores.Values).AsReadOnly(); }
+        public IList<IJugador> jugadores { get => new List<IJugador>(this.misJugadores.Values).AsReadOnly(); }
         
 
         public IJugador getJugador(string nombreJugador)

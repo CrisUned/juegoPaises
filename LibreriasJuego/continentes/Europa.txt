@@ -1,9 +1,7 @@
 ﻿Albania: Tirana - Lek
 Alemania: Berlin - Euro (UE)
 Andorra: Andorra la Vieja - Euro
-Armenia: Ereván - Dram
 Austria: Viena - Euro (UE)
-Azerbaiyán: Bakú - Manat
 Bélgica: Bruselas - Euro (UE)
 Bielorrusia: Minsk - Rublo Bielorruso
 Bosnia y Herzegovina: Sarajevo - Marco Convertible
