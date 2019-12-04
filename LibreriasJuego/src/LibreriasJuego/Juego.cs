@@ -8,7 +8,7 @@ namespace LibreriasJuego
     {
         private Juego()
         {
-            baseDatosJugadores = null;
+            baseDatosJugadores = new BaseDatosJugadoresRAM();
         }
 
         private static Juego elJuego;

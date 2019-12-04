@@ -1,18 +1,16 @@
-﻿using LibreriasJuego;
+using LibreriasJuego;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+
 namespace PruebasLibreria
 {
     [TestClass]
     public class PruebasClasePartida
     {
-        // Prueba Recuperar Lista Partidas
         [TestMethod]
         public void TestCrearPartida()
         {
             //Partida p = new Partida();
-
         }
-
-       
     }
 }
