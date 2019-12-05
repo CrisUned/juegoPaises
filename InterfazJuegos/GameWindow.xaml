@@ -1,0 +1,25 @@
+﻿<Window x:Name="VentanaJugadores" x:Class="InterfazJuegos.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfazJuegos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#FFDEA2A2" FontSize="16">
+    <Grid HorizontalAlignment="Left" Width="790" Height="419" VerticalAlignment="Bottom">
+        <Label Content="País:&#xA;" HorizontalAlignment="Left" Margin="97,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.663,1.476"/>
+        <Label Content="Capital:" HorizontalAlignment="Left" Margin="97,147,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_Finalizar" Content="Finalizar" HorizontalAlignment="Left" Margin="314,313,0,0" VerticalAlignment="Top" Width="129" Height="46" Click="btn_Finalizar_Click"/>
+            <Label Content="País:&#xA;" HorizontalAlignment="Left" Margin="97,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.663,1.476"/>
+            <Label Content="Capital:" HorizontalAlignment="Left" Margin="97,147,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="btn_Probar" Content="Probar" HorizontalAlignment="Left" Margin="483,313,0,0" VerticalAlignment="Top" Width="129" Height="46" Click="btn_Probar_Click"/>
+            <Label x:Name="lbl_Pais" Content="España&#xA;" HorizontalAlignment="Left" Margin="234,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.663,1.476" Width="211"/>
+            <Label Content="Intentos:&#xA;" HorizontalAlignment="Left" Margin="97,208,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.663,1.476" Width="84"/>
+            <Label Content="Estadísticas:&#xA;" HorizontalAlignment="Left" Margin="97,261,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.663,1.476" Width="110"/>
+            <Label x:Name="lbl_Intentos" Content="3&#xA;" HorizontalAlignment="Left" Margin="227,208,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.663,1.476" Width="84"/>
+            <Label x:Name="lbl_Estadisticas" Content="3 acertadas de 10 preguntas&#xA;" HorizontalAlignment="Left" Margin="227,261,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.663,1.476" Width="232"/>
+            <TextBox x:Name="txt_Capital" HorizontalAlignment="Left" Height="23" Margin="234,155,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="189"/>
+
+
+    </Grid>
+</Window>
