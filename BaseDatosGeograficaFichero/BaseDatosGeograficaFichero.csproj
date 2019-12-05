@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="src\continentes\Africa.txt" />
+    <None Remove="src\continentes\America.txt" />
+    <None Remove="src\continentes\Asia.txt" />
+    <None Remove="src\continentes\Europa.txt" />
+    <None Remove="src\continentes\Oceania.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="src\continentes\Africa.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\continentes\America.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\continentes\Asia.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\continentes\Europa.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\continentes\Oceania.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InterfazLibreria\InterfazLibreria.csproj" />
+    <ProjectReference Include="..\LibreriasJuego\LibreriasJuego.csproj" />
+  </ItemGroup>
+
+</Project>
