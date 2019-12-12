@@ -9,7 +9,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestRecuperarListaPartidas1()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
             IJugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
             Assert.IsNotNull(cris.historicoPartidas);  // me devuelve una lista de partidas aunque esté vacía
 
@@ -19,9 +19,9 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestNuevaPartida()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
             IJugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
-            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContiente("Europa");
+            IContinente europa = IJuego.dameElJuego().baseDatosGeografica.getContiente("Europa");
             IPartida partida = cris.nuevaPartida(europa);
             Assert.IsNotNull(partida);  
 
@@ -32,12 +32,12 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestNuevaPartida2()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
             IJugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
 
             int cuantasllevaba = cris.historicoPartidas.Count;
 
-            IContinente europa = Juego.dameElJuego().baseDatosGeografica.getContiente("Europa");
+            IContinente europa = IJuego.dameElJuego().baseDatosGeografica.getContiente("Europa");
             IPartida partida = cris.nuevaPartida(europa);
 
             int cuantaslleva = cris.historicoPartidas.Count;

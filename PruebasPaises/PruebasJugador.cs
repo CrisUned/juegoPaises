@@ -31,7 +31,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestJugador_Recupera()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
             IJugador criso = miBaseDatosJugadores.nuevoJugador("Cris2");
 
             IJugador cris = miBaseDatosJugadores.getJugador("Cris2");
@@ -43,7 +43,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestJugadores_AltayRecupera()
         {
-            IBaseDatosJugadores miBaseDatosJugadores = Juego.dameElJuego().baseDatosJugadores;
+            IBaseDatosJugadores miBaseDatosJugadores = IJuego.dameElJuego().baseDatosJugadores;
             IJugador cris = miBaseDatosJugadores.getOrCreateJugador("Cris");
             Assert.AreEqual(cris.nombre, "Cris");
 

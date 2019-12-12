@@ -18,7 +18,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestEuropa_Paises()
         {
-            IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
+            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
             IContinente europa = miBaseDatosGeografica.getContiente("Europa");
             
             Assert.AreNotEqual(europa.paises.Count,0);
@@ -27,7 +27,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestEuropa_NoPaises()
         {
-            IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
+            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
             IContinente europa = miBaseDatosGeografica.getContiente("Europa");
 
             // IPais nuevazelanda = europa.getPais("NuevaZelanda");
@@ -41,7 +41,7 @@ namespace PruebasLibreria
         [TestMethod]
         public void TestEuropa_SiPais()
         {
-            IBaseDatosGeografica miBaseDatosGeografica = Juego.dameElJuego().baseDatosGeografica;
+            IBaseDatosGeografica miBaseDatosGeografica = IJuego.dameElJuego().baseDatosGeografica;
             IContinente europa = miBaseDatosGeografica.getContiente("Europa");
 
             IPais españa = europa.getPais("España");

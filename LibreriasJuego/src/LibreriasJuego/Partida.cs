@@ -7,7 +7,7 @@ namespace LibreriasJuego
     public class Partida:IPartida   //asi hacemos extensiones de herencia
     {
         static Random generadorNumerosAleatorios = new Random();
-        internal Partida(IJugador jugador, IContinente continente)
+        public Partida(IJugador jugador, IContinente continente)
         {
             this.jugador = jugador;
             this.continente = continente;

@@ -4,28 +4,32 @@ using System.Text;
 
 namespace LibreriasJuego
 {
-    public class Juego
+    public abstract class IJuego<T> where T:IJuego<T>
     {
-        private Juego()
-        {
-            baseDatosJugadores = new BaseDatosJugadoresRAM();
-            baseDatosGeografica = new BaseDatosGeografica();
-        }
 
-        private static Juego elJuego;
+        private static IJuego<T> instancia;
+        private static readonly object testigo = new object();
 
-        public static Juego dameElJuego()
+        public IBaseDatosJugadores baseDatosJugadores { get; protected set; }
+        public IBaseDatosGeografica baseDatosGeografica { get; protected set; }
+
+        public static IJuego<T> dameElJuego()
         {
-            if (elJuego == null)
+            if (instancia == null)
             {
-                elJuego = new Juego();
+                lock (testigo)
+                {
+                    if (instancia == null)
+                    {
+                        instancia = Activator.CreateInstance(typeof(T), true) as T;
+                    }
+                }
             }
-            return elJuego;
+            
+            return instancia;
         }
 
-        public IBaseDatosJugadores baseDatosJugadores { get; }
-        public IBaseDatosGeografica baseDatosGeografica { get; }
-
+    
 
     }
 }
