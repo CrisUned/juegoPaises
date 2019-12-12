@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatosJugadoresFichero",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseDatosGeograficaFichero", "BaseDatosGeograficaFichero\BaseDatosGeograficaFichero.csproj", "{EBCC2298-B0DF-450C-844B-2EE176E8C9D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatosGeograficaWebServiceCliente", "BaseDatosGeograficaWebServiceCliente\BaseDatosGeograficaWebServiceCliente.csproj", "{047874D6-B158-47DD-947E-7D2FB9D01898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDatosGeograficaWebService", "BaseDatosGeograficaWebService\BaseDatosGeograficaWebService.csproj", "{0BDA9174-C6EA-4D8A-80C7-3A51387329A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{EBCC2298-B0DF-450C-844B-2EE176E8C9D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBCC2298-B0DF-450C-844B-2EE176E8C9D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBCC2298-B0DF-450C-844B-2EE176E8C9D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{047874D6-B158-47DD-947E-7D2FB9D01898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{047874D6-B158-47DD-947E-7D2FB9D01898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{047874D6-B158-47DD-947E-7D2FB9D01898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{047874D6-B158-47DD-947E-7D2FB9D01898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDA9174-C6EA-4D8A-80C7-3A51387329A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDA9174-C6EA-4D8A-80C7-3A51387329A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDA9174-C6EA-4D8A-80C7-3A51387329A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDA9174-C6EA-4D8A-80C7-3A51387329A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,27 +5,27 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="src\continentes\Africa.txt" />
-    <None Remove="src\continentes\America.txt" />
-    <None Remove="src\continentes\Asia.txt" />
-    <None Remove="src\continentes\Europa.txt" />
-    <None Remove="src\continentes\Oceania.txt" />
+    <None Remove="continentes\Africa.txt" />
+    <None Remove="continentes\America.txt" />
+    <None Remove="continentes\Asia.txt" />
+    <None Remove="continentes\Europa.txt" />
+    <None Remove="continentes\Oceania.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="src\continentes\Africa.txt">
+    <Content Include="continentes\Africa.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="src\continentes\America.txt">
+    <Content Include="continentes\America.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="src\continentes\Asia.txt">
+    <Content Include="continentes\Asia.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="src\continentes\Europa.txt">
+    <Content Include="continentes\Europa.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="src\continentes\Oceania.txt">
+    <Content Include="continentes\Oceania.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
